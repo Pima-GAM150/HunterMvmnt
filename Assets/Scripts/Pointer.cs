@@ -25,7 +25,7 @@ public class Pointer : MonoBehaviour
         RaycastHit currentHit;
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out currentHit, Mathf.Infinity, LayerMask.GetMask("Default")) && Input.GetMouseButtonDown(0))
         {
-            if (currentHit.collider.gameObject.tag == "Win") SceneManager.LoadScene(sceneIndex + 1);
+            if (currentHit.collider.gameObject.tag == "Win") SceneManager.LoadScene(sceneIndex + 1); 
         }
     }
 }
